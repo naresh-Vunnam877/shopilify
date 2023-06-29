@@ -1,5 +1,5 @@
 import React from "react";
-
+import Testimonials from "./Testimonial";
 const Product = () => {
   return (
     <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
@@ -178,6 +178,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <Testimonials />
     </section>
   );
 };
