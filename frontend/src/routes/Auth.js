@@ -9,7 +9,7 @@ import Cart from '../Pages/Cart/Cart'
 import OrderSteps from '../Pages/Cart/OrderSteps'
 
 const allRoutes = () =>{
-    const token = true
+    const token = false
 
     const publicRoutes = [
         {
