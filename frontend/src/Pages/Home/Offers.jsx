@@ -1,4 +1,10 @@
 import React from "react";
+import OfferImg1 from '../../assets/15.png'
+import OfferImg2 from '../../assets/19.png'
+import OfferImg3 from '../../assets/20.png'
+import OfferImg4 from '../../assets/jersey3.png'
+import OfferImg5 from '../../assets/jersey4.png'
+import OfferImg6 from '../../assets/jersey12.png'
 
 const Offers = () => {
   return (
@@ -20,7 +26,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg2}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
@@ -41,7 +47,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg1}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
@@ -62,7 +68,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg3}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
@@ -83,7 +89,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg4}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
@@ -104,7 +110,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg5}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
@@ -125,7 +131,7 @@ const Offers = () => {
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"
-                src="https://dummyimage.com/600x360"
+                src={ OfferImg6}
               />
               <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
