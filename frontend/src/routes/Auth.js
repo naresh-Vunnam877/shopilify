@@ -7,9 +7,13 @@ import Products from '../Pages/Products'
 import Product from '../Components/Product'
 import Cart from '../Pages/Cart/Cart'
 import OrderSteps from '../Pages/Cart/OrderSteps'
+import Layout from '../Layouts/Layout'
+import AboutPage from '../Pages/About'
+import ContactPage from '../Pages/Contact'
+import Notifications from '../Pages/Notifications'
 
 const allRoutes = () =>{
-    const token = false
+    const token = true
 
     const publicRoutes = [
         {
@@ -27,27 +31,42 @@ const allRoutes = () =>{
         {
             path :'/',
             exact : true,
-            element : token ?  <Home /> : <Navigate to={'/login'} />
+            element : token ? <Layout children={<Home />}/>  : <Navigate to={'/login'} />
         },
                 {
             path :'/products',
             exact : true,
-            element : token ?  <Products/> : <Navigate to={'/login'} />
+            element : token ? <Layout children={<Products/>}/>   : <Navigate to={'/login'} />
         },
         {
             path :'/product/:id',
             exact : true,
-            element : token ?  <Product /> : <Navigate to={'/login'} />
+            element : token ? <Layout children={<Product/>}/>  : <Navigate to={'/login'} />
         },
         {
             path :'/cart',
             exact : true,
-            element : token ?  <Cart /> : <Navigate to={'/login'} />
+            element : token ?  <Layout children={<Cart/>}/> : <Navigate to={'/login'} />
         },
         {
             path :'/cart/status',
             exact : true,
-            element : token ?  <OrderSteps /> : <Navigate to={'/login'} />
+            element : token ?  <Layout children={<OrderSteps/>}/> : <Navigate to={'/login'} />
+        },
+        {
+            path :'/contact',
+            exact : true,
+            element : token ?  <Layout children={<ContactPage/>}/> : <Navigate to={'/login'} />
+        },
+        {
+            path :'/about',
+            exact : true,
+            element : token ?  <Layout children={<AboutPage/>}/> : <Navigate to={'/login'} />
+        },
+        {
+            path :'/notify',
+            exact : true,
+            element : token ?  <Layout children={<Notifications/>}/> : <Navigate to={'/login'} />
         }
     ]
 
